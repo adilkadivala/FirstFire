@@ -2,6 +2,7 @@ import { getDatabase, ref, set } from "firebase/database";
 
 import { app } from "./firebase";
 import SignUp from "./Pages/SIgnUp";
+import SignIn from "./Pages/SignIn";
 
 // making databse insense
 
@@ -23,6 +24,7 @@ function App() {
       </div>
       <button onClick={putData}>Send Data</button>
       <SignUp />
+      <SignIn />
     </>
   );
 }
